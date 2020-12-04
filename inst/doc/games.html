@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Included games</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+<style type="text/css">
+a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
+a.anchor-section::before {content: '#';}
+.hasAnchor:hover a.anchor-section {visibility: visible;}
+</style>
+<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
+document.addEventListener('DOMContentLoaded', function() {
+  // Do nothing if AnchorJS is used
+  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
+    return;
+  }
+
+  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  // Do nothing if sections are already anchored
+  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
+    return null;
+  }
+
+  // Use section id when pandoc runs with --section-divs
+  const section_id = function(x) {
+    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
+            ? x.id : '');
+  };
+
+  // Add anchors
+  h.forEach(function(x) {
+    const id = x.id || section_id(x.parentElement);
+    if (id === '') {
+      return null;
+    }
+    let anchor = document.createElement('a');
+    anchor.href = '#' + id;
+    anchor.classList = ['anchor-section'];
+    x.classList.add('hasAnchor');
+    x.appendChild(anchor);
+  });
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Included games</h1>
+
+
+
+<p><code>{chess}</code> includes a total of 61 games so you can get up and running as soon as you install the package. To access them, use the <code>system.file()</code> function as below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(chess)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Read final game from the Queen&#39;s Gambit</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>file <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">&quot;harmon.pgn&quot;</span>, <span class="at">package =</span> <span class="st">&quot;chess&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>harmon_borgov <span class="ot">&lt;-</span> <span class="fu">read_game</span>(file)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># PGN for game</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(harmon_borgov)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Event &quot;Moscow Invitational&quot;]</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Site &quot;https://lichess.org/DxKCK3mk&quot;]</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Date &quot;1968.??.??&quot;]</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Round &quot;1&quot;]</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [White &quot;Harmon, Elizabeth (?)&quot;]</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Black &quot;Borgov, Vasily (?)&quot;]</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Result &quot;1-0&quot;]</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Annotator &quot;lichess.org&quot;]</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [BlackElo &quot;?&quot;]</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [ECO &quot;D20&quot;]</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Opening &quot;Queen&#39;s Gambit Accepted: Central Variation, McDonnell Defense&quot;]</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Termination &quot;Normal&quot;]</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [TimeControl &quot;-&quot;]</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Variant &quot;Standard&quot;]</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [WhiteElo &quot;?&quot;]</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1. d4 d5 2. c4 e5 $6 { (0.00 → 0.83) Inaccuracy. e6 was best. } ( 2... e6 3. Nc3 c6 4. e3 Nf6 5. b3 Nbd7 6. Bb2 Bd6 7. Bd3 ) 3. e4 $4 { (0.83 → -0.94) Blunder. dxe5 was best. } ( 3. dxe5 Ne7 4. Nc3 d4 5. Nb5 Nbc6 6. Nf3 Ng6 7. a3 Be7 ) 3... dxc4 $2 { (-0.94 → 0.48) Mistake. dxe4 was best.</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; D20 Queen&#39;s Gambit Accepted: Central Variation, McDonnell Defense } ( 3... dxe4 4. Ne2 exd4 5. Qxd4 Qe7 6. Nbc3 Nc6 7. Qxe4 Be6 8. Nd4 ) 4. Be3 $2 { (0.48 → -0.91) Mistake. Nf3 was best. } ( 4. Nf3 exd4 5. Bxc4 Nc6 6. O-O Be6 7. Bb5 Bc5 8. b4 Bb6 ) 4... Nf6 5. Nc3 Nc6 $6 { (-0.51 → 0.13) Inaccuracy. exd4 was best. } ( 5... exd4 6. Qxd4 Qxd4 7. Bxd4 Be6 8. f4 Nc6 9. Bxf6 gxf6 10. f5 ) 6. d5 Ne7 $6 { (-0.33 → 0.60) Inaccuracy. Na5 was best. } ( 6... Na5 7. Qa4+ c6 8. dxc6 Nxc6 9. Bxc4 Bb4 10. Nf3 Bd7 11. O-O ) 7. Bxc4 Ng6 8. f3 Bd6 9. Qd2 Bd7 10. Nge2 a6 11. Bb3 b5 12. a4 O-O 13. O-O Qe7 14. Rac1 Nh5 15. g3 h6 16. Bc2 Rab8 17. axb5 axb5 18. Ra1 Ra8 $6 { (-0.20 → 0.55) Inaccuracy. Bh3 was best. } ( 18... Bh3 ) 19. Bd3 Bb4 20. Rxa8 Rxa8 21. Qc2 Bc5 22. Nd1 Bd6 23. Nf2 $6 { (0.56 → 0.00) Inaccuracy. Nc1 was best. } ( 23. Nc1 Bh3 24. Rf2 b4 25. Nb3 Nf8 26. Qc6 Qd8 27. Rd2 Bd7 28. Qc2 Nh7 29. Nf2 Ng5 ) 23... Nhf4 24. Rc1 Qg5 25. Kh1 Qh5 26. Ng1 Nxd3 27. Nxd3 f5 28. Nc5 Bc8 29. Rf1 $6 { (-0.40 → -0.93) Inaccuracy. Ne6 was best. } ( 29. Ne6 Bxe6 30. dxe6 Ne7 31. Bc5 Qg6 32. exf5 Qxf5 33. Qxf5 Nxf5 34. Ne2 Re8 35. g4 Nh4 ) 29... Ne7 30. Qd3 fxe4 31. fxe4 Qg6 32. Kg2 Kh7 33. Nf3 Ng8 34. Nh4 Qg4 35. Nf5 Nf6 $6 { (-0.99 → 0.00) Inaccuracy. Ra2 was best. } ( 35... Ra2 36. h3 Rxb2+ 37. Rf2 Rxf2+ 38. Bxf2 Qg6 39. Ne6 Bxe6 40. dxe6 Qxe6 41. Qxb5 Nf6 42. Qd3 ) 36. h3 Qg6 37. Ne6 Ra4 38. b3 $6 { (0.67 → 0.00) Inaccuracy. Bc1 was best. } ( 38. Bc1 Bxe6 ) 38... Rxe4 $6 { (0.00 → 0.91) Inaccuracy. Nxe4 was best. } ( 38... Nxe4 39. bxa4 Nxg3 40. Ne7 Qxd3 41. Nf8+ Kh8 42. Nfg6+ Kh7 ) 39. Nxd6 Bxe6 40. dxe6 cxd6 41. e7 d5 42. Bc5 Qe8 43. Qf3 Qc6 44. b4 Qe8 $4 { (0.62 → 4.28) Blunder. Kg8 was best. } ( 44... Kg8 ) 45. Qf5+ Kh8 46. Qxf6 gxf6 47. Rxf6 Qh5 $6 { (3.54 → 4.50) Inaccuracy. Kg7 was best. } ( 47... Kg7 ) 48. Rf8+ Kg7 49. e8=Q Re2+ $6 { (4.09 → 5.81) Inaccuracy. Qxe8 was best. } ( 49... Qxe8 50. Rxe8 ) 50. Kf1 Qxh3+ $4 { (5.42 → Mate in 8) Checkmate is now unavoidable. Qxe8 was best. } ( 50... Qxe8 51. Rxe8 Re4 52. Rd8 d4 53. Bf8+ Kg6 54. Rd6+ Kf7 55. Bxh6 Ke7 56. Rd5 Ke6 57. Rd8 ) 51. Kxe2 Qg2+ 52. Rf2 Qe4+ 53. Kd2 { Black resigns. } 1-0</span></span></code></pre></div>
+<p>The example above loads the final game from the <em>Queen’s Gambit</em>. The other 60 games are sourced from <em>My 60 Memorable Games</em>, a classic book by Bobby Fischer, and are included in a single file. They can be loaded in the same way:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read all games from My 60 Memorable Games</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>file <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">&quot;m60mg.pgn&quot;</span>, <span class="at">package =</span> <span class="st">&quot;chess&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>m60mg <span class="ot">&lt;-</span> <span class="fu">read_game</span>(file)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if it&#39;s a list of 60 games</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(m60mg)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 60</span></span></code></pre></div>
+<p>In cases where you have more than one game in a single file, you can either load them all and access them like in a list (see below) or use the <code>n_max</code> argument to read only a handful of them.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># PGN for Fischer vs. Unzicker</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(m60mg[[<span class="dv">10</span>]])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Event &quot;ZURICH&quot;]</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Site &quot;https://lichess.org/study/4zOTO2ki/IQZZYsFH&quot;]</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Date &quot;1959.??.??&quot;]</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Round &quot;?&quot;]</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [White &quot;Fischer&quot;]</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Black &quot;Unzicker&quot;]</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Result &quot;*&quot;]</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [ECO &quot;C97&quot;]</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Opening &quot;Ruy Lopez: Closed, Chigorin, Yugoslav System&quot;]</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [UTCDate &quot;2020.11.11&quot;]</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [UTCTime &quot;01:28:06&quot;]</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [Variant &quot;Standard&quot;]</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 ( 10... c6 11. d4 Qc7 ) 11. d4 Qc7 12. Nbd2 Bd7 13. Nf1 Rfe8 14. Ne3 ( 14. b3 g6 15. Bg5 ) 14... g6 15. dxe5 dxe5 16. Nh2 Rad8 17. Qf3 Be6 18. Nhg4 Nxg4 19. hxg4 ( 19. Nxg4 Bxg4 20. hxg4 c4 21. g3 Nb7 22. Kg2 Nc5 23. Rh1 f6 ) 19... Qc6 ( 19... Nc4 20. Nd5 Bxd5 21. exd5 ) 20. g5 $5 Nc4 21. Ng4 Bxg4 22. Qxg4 f6 $2 23. gxf6 Bxf6 24. a4 $1 Nb6 25. axb5 axb5 26. Be3 Ra8 ( 26... Nc4 27. Bb3 ) 27. Red1 Kh8 28. b3 Bg7 ( 28... Rxa1 29. Rxa1 Ra8 30. Rxa8+ Nxa8 31. Qd1 $1 ) 29. Qh4 Bf6 30. Bg5 $1 Bxg5 31. Qxg5 Rxa1 32. Rxa1 Nd7 33. Bd1 $1 Nf6 ( 33... Qxe4 34. Bf3 Qf4 ( 34... Qc2 35. Ra7 ) 35. Qxf4 exf4 36. Bc6 Re7 ( 36... Rd8 37. Rd1 ) 37. Ra8+ $1 Kg7 38. Ra7 ) 34. Ra7 Qd6 ( 34... Nxe4 $2 35. Qh6 ) 35. Be2 $1 Re7 36. Rxe7 Qxe7 37. Bxb5 Kg7 38. Be2 Qc7 39. Qe3 Qa5 40. g3 Qa3 ( 40... Qc7 ) 41. Kg2 ( 41. b4 $1 cxb4 42. Qc5 $1 ) 41... Qa5 ( 41... Qxb3 42. Qxc5 Nxe4 43. Qxe5+ Nf6 44. c4 ) 42. Qd3 Qb6 43. Qc4 Qc6 44. Bd3 ( 44. f3 ) 44... Qb6 45. b4 cxb4 46. cxb4 Ng4 47. Qc5 Qxc5 ( 47... Qd8 $2 48. Be2 ) 48. bxc5 Kf7 49. f4 Ke7 50. Kf3 Nf6 ( 50... h5 51. Bc4 ) 51. Bb5 ( 51. fxe5 $2 Nd7 ) 51... Ke6 52. Bc4+ Ke7 53. c6 $1 Ne8 ( 53... exf4 54. gxf4 Ne8 55. e5 Nc7 56. Ke4 Ne8 ( 56... h5 57. Kf3 ) 57. Bg8 Kf8 58. Bxh7 Kg7 59. Bxg6 Kxg6 60. f5+ Kg5 61. f6 Kg6 62. Kd5 Kf7 63. Kc5 Ke6 64. Kb6 ) 54. fxe5 h6 55. Ke3 Nc7 56. Kd4 h5 57. Ke3 $1 g5 58. Be2 h4 59. gxh4 gxh4 60. Bc4 Ne8 61. Kf4 Kd8 62. Kg4 Kc7 63. Bf7 Ng7 64. Kxh4 Kxc6 65. Kg5 { 1-0 Black resigns } *</span></span></code></pre></div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
